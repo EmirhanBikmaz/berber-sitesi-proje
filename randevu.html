@@ -1,0 +1,472 @@
+<!doctype html>
+<html class="no-js" lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Randevu Al | Berber Dükkanı </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* --- MENÜ AYARLARI (STANDART) --- */
+        .main-menu ul li ul.submenu {
+            width: 250px !important;
+        }
+
+        .main-menu ul li ul.submenu li a {
+            white-space: nowrap !important;
+            padding: 10px 20px !important;
+        }
+
+        /* --- RANDEVU FORMU TASARIMI (CONTACT SAYFASI GİBİ BÜYÜK) --- */
+
+        /* Etiketler */
+        .form-group label {
+            display: block !important;
+            margin-bottom: 10px !important;
+            font-weight: 600 !important;
+            color: #1c1c1c !important;
+            font-size: 15px !important;
+            text-align: left !important;
+        }
+
+        /* Kutucuklar (Input & Select) */
+        .form-group select,
+        .form-group input {
+            width: 100% !important;
+            height: 50px !important;
+            /* Yükseklik contact.html ile uyumlu */
+            line-height: 50px !important;
+            border: 1px solid #e5e6e9 !important;
+            padding-left: 20px !important;
+            border-radius: 0px !important;
+            /* Template stili düz köşe */
+            font-size: 14px !important;
+            background-color: #fff;
+            color: #777;
+        }
+
+        /* Tıklayınca */
+        .form-group select:focus,
+        .form-group input:focus {
+            border-color: #d4a017 !important;
+            outline: none;
+        }
+
+        /* Saat Kutucukları */
+        .time-slot {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+            border-radius: 0px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            background: #fff;
+            transition: 0.3s;
+            font-weight: 500;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .time-slot:hover:not(.disabled) {
+            border-color: #d4a017;
+            color: #d4a017;
+        }
+
+        .time-slot.selected {
+            background-color: #d4a017;
+            color: #fff;
+            border-color: #d4a017;
+        }
+
+        .time-slot.disabled {
+            background-color: #f9f9ff;
+            color: #ccc;
+            cursor: not-allowed;
+            text-decoration: line-through;
+            border-color: #eee;
+        }
+
+        #selectedTime {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header-area header-transparent pt-20">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="index.html">ANA SAYFA</a></li>
+
+                                            <li><a href="#">KURUMSAL</a>
+                                                <ul class="submenu">
+                                                    <li><a href="about.html">Hakkımızda</a></li>
+                                                    <li><a href="misyon.html">Misyon & Vizyon</a></li>
+                                                    <li><a href="istatistikler.html">İstatistiklerimiz</a></li>
+                                                    <li><a href="duyurular.html">Duyurular & Haberler</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="services.html">HİZMETLERİMİZ</a></li>
+
+                                            <li><a href="#">ÜRÜNLERİMİZ</a>
+                                                <ul class="submenu">
+                                                    <li><a href="urunler.html#sac">Saç Bakım Ürünleri</a></li>
+                                                    <li><a href="urunler.html#sakal">Sakal Bakım Yağları</a></li>
+                                                    <li><a href="urunler.html#sekillendirici">Şekillendiriciler</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="portfolio.html">GALERİMİZ</a></li>
+                                            <li><a href="contact.html">İLETİŞİM</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-right-btn f-right d-none d-lg-block ml-30">
+                                    <a href="#" class="btn header-btn" data-toggle="modal" data-target="#uyeOlModal">ÜYE
+                                        OLUN</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="slider-area2">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 pt-70 text-center">
+                                <h2>Online Randevu</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="section-tittle text-center mb-50">
+                            <span>KOLAY VE HIZLI</span>
+                            <h2>Randevunuzu Planlayın</h2>
+                            <p>Lütfen hizmet almak istediğiniz tarihi seçiniz. Sistem uygun saatleri aşağıda
+                                listeleyecektir.</p>
+                        </div>
+
+                        <form id="randevuFormu">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Hizmet Seçiniz</label>
+                                        <select class="form-control" required>
+                                            <option value="">Lütfen Bir İşlem Seçin...</option>
+                                            <option value="sac">Saç Kesimi (250 TL)</option>
+                                            <option value="sakal">Sakal Tıraşı (150 TL)</option>
+                                            <option value="sakal_duzeltme">Sakal Düzeltme / Kısaltma (100 TL)</option>
+                                            <option value="sac_sakal_duzeltme">Saç Kesimi ve Sakal Düzeltme (300 TL)
+                                            </option>
+                                            <option value="sac_sakal_tiras">Saç ve Sakal Tıraşı (350 TL)</option>
+                                            <option value="ense_favori">Ense ve Favori Düzeltme (80 TL)</option>
+                                            <option value="fon">Fön / Şekillendirme (100 TL)</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Tarih Seçiniz</label>
+                                        <input type="date" id="tarihSecimi" class="form-control" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-4">
+                                    <label>Uygun Saatler</label>
+                                    <div id="saatListesi" class="row">
+                                        <div class="col-12 text-center text-muted">
+                                            <p><i>Lütfen önce tarih seçiniz...</i></p>
+                                        </div>
+                                    </div>
+                                    <input type="text" id="selectedTime" required>
+                                    <small id="saatUyari" class="text-danger" style="display:none;">Lütfen bir saat
+                                        seçiniz.</small>
+                                </div>
+
+                                <div class="col-12 mt-5">
+                                    <h4 class="mb-3" style="font-weight:bold;">İletişim Bilgileriniz</h4>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Adınız Soyadınız" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" placeholder="Telefon Numaranız" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-primary btn-block"
+                                        style="background:#d4a017; border:none; padding:25px; font-size:18px; font-weight:bold;">RANDEVUYU
+                                        ONAYLA</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-area section-bg" data-background="assets/img/gallery/footer_bg.png">
+            <div class="container">
+                <div class="footer-top footer-padding">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                                </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p class="info1">En yeni güncellemelerden ve haberlerden anında haberdar olun.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="footer-number">
+                                    <h4><span>+90 </span>555 123 45 67</h4>
+                                    <p>iletisim@berberdukkani.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Hızlı Erişim</h4>
+                                    <ul>
+                                        <li><a href="index.html">Ana Sayfa</a></li>
+                                        <li><a href="about.html"> Hakkımızda</a></li>
+                                        <li><a href="services.html">Hizmetler</a></li>
+                                        <li><a href="portfolio.html">Galerimiz</a></li>
+                                        <li><a href="contact.html">İletişim</a></li>
+                                        <li><a href="admin.html" target="_blank">Yönetici Girişi</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Kurumsal</h4>
+                                    <ul>
+                                        <li><a href="#">Çerez Politikası</a></li>
+                                        <li><a href="#">Hakkımızda</a></li>
+                                        <li><a href="#">Gizlilik İlkeleri</a></li>
+                                        <li><a href="#">Kullanım Şartları</a></li>
+                                        <li><a href="#">Lisanslar</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Bülten</h4>
+                                    <div class="footer-pera">
+                                        <p class="info1">Günlük güncellemeleri almak için şimdi abone olun</p>
+                                    </div>
+                                </div>
+                                <div class="footer-form">
+                                    <div id="mc_embed_signup">
+                                        <form target="_blank"
+                                            action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                            method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                            <input type="email" name="EMAIL" id="newsletter-form-email"
+                                                placeholder="E-posta Adresi" class="placeholder hide-on-focus"
+                                                onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'E-posta Adresiniz'">
+                                            <div class="form-icon">
+                                                <button type="submit" name="submit" id="newsletter-submit"
+                                                    class="email_icon newsletter-submit button-contactForm">Gönder</button>
+                                            </div>
+                                            <div class="mt-10 info"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-xl-9 col-lg-8">
+                            <div class="footer-copy-right">
+                                <p>Telif Hakkı &copy;
+                                    <script>document.write(new Date().getFullYear());</script> Tüm hakları saklıdır
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="footer-social f-right">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="randevuBasarili" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">İşlem Başarılı</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fas fa-calendar-check" style="font-size: 60px; color: #28a745; margin-bottom: 20px;"></i>
+                    <h4>Randevunuz Oluşturuldu!</h4>
+                    <p>Randevu bilgileriniz telefonunuza SMS olarak gönderilmiştir. Sizi bekliyor olacağız.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tamam</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // Tarih değiştiğinde
+            $('#tarihSecimi').on('change', function () {
+                var secilenTarih = $(this).val();
+                var saatListesiDiv = $('#saatListesi');
+
+                // Saatleri temizle
+                saatListesiDiv.empty();
+                $('#selectedTime').val('');
+
+                // Saatler
+                var saatler = ["09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00"];
+
+                saatler.forEach(function (saat) {
+                    var doluMu = Math.random() < 0.4;
+
+                    var classAdi = doluMu ? 'time-slot disabled' : 'time-slot';
+                    var tiklanabilir = doluMu ? '' : 'onclick="saatSec(this, \'' + saat + '\')"';
+                    var metin = doluMu ? '<span style="color:#999;">DOLU</span>' : saat;
+
+                    var html = `
+                        <div class="col-4 col-md-2">
+                            <div class="${classAdi}" ${tiklanabilir}>
+                                ${metin}
+                            </div>
+                        </div>
+                    `;
+                    saatListesiDiv.append(html);
+                });
+            });
+
+            // Form Gönderme
+            $('#randevuFormu').on('submit', function (e) {
+                e.preventDefault();
+
+                if ($('#selectedTime').val() === "") {
+                    $('#saatUyari').show();
+                    return;
+                }
+                $('#saatUyari').hide();
+
+                var btn = $(this).find('button[type="submit"]');
+                var originalText = btn.text();
+                btn.prop('disabled', true).text('İŞLENİYOR...');
+
+                setTimeout(function () {
+                    $('#randevuBasarili').modal('show');
+                    btn.prop('disabled', false).text(originalText);
+                    $('#randevuFormu')[0].reset();
+                    $('#saatListesi').html('<div class="col-12 text-center text-muted"><p><i>Lütfen önce tarih seçiniz...</i></p></div>');
+                }, 1500);
+            });
+        });
+
+        function saatSec(element, saat) {
+            $('.time-slot').removeClass('selected');
+            $(element).addClass('selected');
+            $('#selectedTime').val(saat);
+            $('#saatUyari').hide();
+        }
+    </script>
+
+</body>
+
+</html>

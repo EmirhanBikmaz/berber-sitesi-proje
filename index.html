@@ -1,0 +1,780 @@
+<!doctype html>
+<html class="no-js" lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Berber Dükkanı </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Menü Genişlik Ayarı */
+        .main-menu ul li ul.submenu {
+            width: 250px !important;
+        }
+
+        .main-menu ul li ul.submenu li a {
+            white-space: nowrap !important;
+            padding: 10px 20px !important;
+        }
+
+        /* Slider Altındaki Gizli Resmi Kaldır (Siyah Arka Plan) */
+        .slider-area {
+            background-image: none !important;
+            background-color: #000 !important;
+        }
+
+        /* Sayaç Alanı Düzeltmesi */
+        .count-down-area {
+            background-image: none !important;
+            background-color: #fff !important;
+            padding-top: 50px !important;
+            padding-bottom: 10px !important;
+        }
+
+        .single-counter p {
+            color: #1c1c1c !important;
+            font-weight: 600 !important;
+        }
+
+        /* Modal Düzeltmesi (Üye Ol Formu) */
+        #uyeOlModal .form-control {
+            height: 45px !important;
+            line-height: 45px;
+            border: 1px solid #ced4da;
+        }
+
+        #uyeOlModal .btn {
+            height: auto;
+            padding: 12px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header-area header-transparent pt-20">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li class="active"><a href="index.html">ANA SAYFA</a></li>
+                                            <li><a href="#">KURUMSAL</a>
+                                                <ul class="submenu">
+                                                    <li><a href="about.html">Hakkımızda</a></li>
+                                                    <li><a href="misyon.html">Misyon & Vizyon</a></li>
+                                                    <li><a href="istatistikler.html">İstatistiklerimiz</a></li>
+                                                    <li><a href="duyurular.html">Duyurular & Haberler</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="services.html">HİZMETLERİMİZ</a></li>
+                                            <li><a href="#">ÜRÜNLERİMİZ</a>
+                                                <ul class="submenu">
+                                                    <li><a href="urunler.html#sac">Saç Bakım Ürünleri</a></li>
+                                                    <li><a href="urunler.html#sakal">Sakal Bakım Yağları</a></li>
+                                                    <li><a href="urunler.html#sekillendirici">Şekillendiriciler</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="portfolio.html">GALERİMİZ</a></li>
+                                            <li><a href="contact.html">İLETİŞİM</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-right-btn f-right d-none d-lg-block ml-30">
+                                    <a href="#" class="btn header-btn" data-toggle="modal" data-target="#uyeOlModal">ÜYE
+                                        OLUN</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="slider-area position-relative fix">
+            <div class="slider-active">
+                <div class="single-slider slider-height d-flex align-items-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=2074&auto=format&fit=crop'); background-size: cover; background-position: center;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-9 col-md-11 col-sm-10">
+                                <div class="hero__caption">
+                                    <span data-animation="fadeInUp" data-delay="0.2s">Profesyonel Hizmet</span>
+                                    <h1 data-animation="fadeInUp" data-delay="0.5s">Modern Saç Tasarımı</h1>
+                                    <div class="hero__btn" data-animation="fadeInUp" data-delay="0.8s">
+                                        <a href="hizmet-detay.html" class="btn hero-btn">Detayları İncele</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slider slider-height d-flex align-items-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-9 col-md-11 col-sm-10">
+                                <div class="hero__caption">
+                                    <span data-animation="fadeInUp" data-delay="0.2s">Geleneksel Deneyim</span>
+                                    <h1 data-animation="fadeInUp" data-delay="0.5s">Özel Sakal Tıraşı</h1>
+                                    <div class="hero__btn" data-animation="fadeInUp" data-delay="0.8s">
+                                        <a href="hizmet-detay.html" class="btn hero-btn">Detayları İncele</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slider slider-height d-flex align-items-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-9 col-md-11 col-sm-10">
+                                <div class="hero__caption">
+                                    <span data-animation="fadeInUp" data-delay="0.2s">Tam Rahatlama</span>
+                                    <h1 data-animation="fadeInUp" data-delay="0.5s">Cilt Bakım & Maske</h1>
+                                    <div class="hero__btn" data-animation="fadeInUp" data-delay="0.8s">
+                                        <a href="hizmet-detay.html" class="btn hero-btn">Detayları İncele</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stock-text">
+                <h2>Daha özgüvenlİ ol</h2>
+                <h2>Daha özgüvenlİ ol</h2>
+            </div>
+
+            <div class="thumb-content-box">
+                <div class="thumb-content">
+                    <h3><a href="randevu.html" style="color: #000; text-decoration: none;">Hemen Randevu Al</a></h3>
+                    <a href="randevu.html"> <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="count-down-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-counter text-center mb-30">
+                            <span class="counter" style="color: #d4a017; font-size: 60px; font-weight: 700;">52</span>
+                            <p>Yıllık Tecrübe</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-counter text-center mb-30">
+                            <span class="counter"
+                                style="color: #d4a017; font-size: 60px; font-weight: 700;">15000</span>
+                            <span style="color: #d4a017; font-size: 60px; font-weight: 700;">+</span>
+                            <p>Mutlu Müşteri</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-counter text-center mb-30">
+                            <span class="counter" style="color: #d4a017; font-size: 60px; font-weight: 700;">12</span>
+                            <p>Ödül & Sertifika</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-counter text-center mb-30">
+                            <span class="counter" style="color: #d4a017; font-size: 60px; font-weight: 700;">8</span>
+                            <p>Usta Personel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="about-area section-padding30 position-relative" style="padding-top: 50px;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-11">
+                        <div class="about-img">
+                            <img src="assets/img/gallery/about.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-caption">
+                            <div class="section-tittle section-tittle3 mb-35">
+                                <span>HAKKIMIZDA</span>
+                                <h2>Saç Kesiminde 52 Yıllık Tecrübe!</h2>
+                            </div>
+                            <p class="mb-30 pera-bottom">"52 yıllık tecrübemizi, günümüzün modern stilleri ve üstün
+                                hizmet anlayışıyla birleştiriyoruz. Yılların getirdiği el alışkanlığını, sürekli
+                                yenilenen trendlerle buluşturarak her yaşa ve tarza hitap eden kusursuz bir görünüm
+                                vadediyoruz."</p>
+                            <p class="pera-top mb-50">Siz koltuğumuza oturduğunuz andan itibaren önceliğimiz,
+                                isteklerinizi dinlemek ve size en yakışan tarzı ortaya çıkarmaktır.</p>
+                            <img src="assets/img/gallery/signature.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-shape">
+                <img src="assets/img/gallery/about-shape.png" alt="">
+            </div>
+        </section>
+
+        <section class="service-area pb-170">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
+                        <div class="section-tittle text-center mb-90">
+                            <span>PROFESYONEL HİZMETLERİMİZ</span>
+                            <h2>SİZE SUNDUĞUMUZ EN İYİ HİZMETLERİMİZ</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-caption text-center mb-30">
+                            <div class="service-icon"><i class="flaticon-healthcare-and-medical"></i></div>
+                            <div class="service-cap">
+                                <h4><a href="#">Modern Saç Tasarımı</a></h4>
+                                <p>Yüz şeklinize ve yaşam tarzınıza en uygun saç modelini belirliyor; klasik makas
+                                    ustalığını modern kesim teknikleriyle buluşturuyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-caption active text-center mb-30">
+                            <div class="service-icon"><i class="flaticon-fitness"></i></div>
+                            <div class="service-cap">
+                                <h4><a href="#">Bakım ve Rahatlama</a></h4>
+                                <p>Saç kesimi sonrası özel şampuanlarla yıkama, sıcak havlu uygulaması ve rahatlatıcı
+                                    baş-omuz masajı ile günün stresini atın.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-caption text-center mb-30">
+                            <div class="service-icon"><i class="flaticon-clock"></i></div>
+                            <div class="service-cap">
+                                <h4><a href="#">Sakal Şekillendirme</a></h4>
+                                <p>İster geleneksel ustura tıraşı, ister modern sakal tasarımı. Yüz hatlarınızı ortaya
+                                    çıkaran, size özel profesyonel dokunuşlar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="team-area pb-180">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-8 col-md-11 col-sm-11">
+                        <div class="section-tittle text-center mb-100">
+                            <span>profesyonel takımımız</span>
+                            <h2>SİZİN İÇİN ÖDÜLLÜ SAÇ KESİMİ UZMANLARIMIZ</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row team-active dot-style">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-80 text-center">
+                            <div class="team-img"><img src="assets/img/gallery/team1.png" alt=""></div>
+                            <div class="team-caption"><span>Saç Tasarım Uzmanı</span>
+                                <h3><a href="#">Guy C. Pulido bks</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-80 text-center">
+                            <div class="team-img"><img src="assets/img/gallery/team2.png" alt=""></div>
+                            <div class="team-caption"><span>Renklendİrme Uzmanı</span>
+                                <h3><a href="#">Steve L. Nolan</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-80 text-center">
+                            <div class="team-img"><img src="assets/img/gallery/team3.png" alt=""></div>
+                            <div class="team-caption"><span>Saç Tasarım Uzmanı</span>
+                                <h3><a href="#">Edgar P. Mathis</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-80 text-center">
+                            <div class="team-img"><img src="assets/img/gallery/team2.png" alt=""></div>
+                            <div class="team-caption"><span>Saç Tasarım Uzmanı</span>
+                                <h3><a href="#">Edgar P. Mathis</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="best-pricing section-padding2 position-relative">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="section-tittle mb-50">
+                            <span>EN İYİ FİYATLAR</span>
+                            <h2>ŞEHİRDEKİ<br> EN İYİ FİYATLARI SAĞLIYORUZ</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="pricing-list">
+                                    <ul>
+                                        <li>Fön / Şekİllendirme. . . . . . . . . . . . . . . . . . . . .
+                                            .<span>$25</span></li>
+                                        <li>Fön ve Boya. . . . . . . . . . . . . . . . . . . . . . . . .
+                                            .<span>$65</span></li>
+                                        <li>Fön ve Tonlama. . . . . . . . . . . . . . . . . . . . . .<span>$65</span>
+                                        </li>
+                                        <li>Perma (Kalıcı dalga işlemi). . . . . . . . . . . . .<span>$65</span></li>
+                                        <li>Saç Kesİmİ ve Fön. . . . . . . . . . . . . . . . . . . . . .<span>$63</span>
+                                        </li>
+                                        <li>Saç Kesİmİ, Fön ve Boya. . . . . . . . . . . . . <span>$100</span></li>
+                                        <li>Saç Kesİmİ, Fön ve Tonlama. . . . . . . . . . . . . . . .<span>$100</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="pricing-list">
+                                    <ul>
+                                        <li>Saç Kesİmİ. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                            .<span>$25</span></li>
+                                        <li>Sakal Tıraşı. . . . . . . . . . . . . . . . . . . . . . . . .
+                                            .<span>$65</span></li>
+                                        <li>Sakal Düzeltme / Kısaltma. . . . . . . . . . . . . . . . .<span>$65</span>
+                                        </li>
+                                        <li>Saç Kesİmİ ve Sakal Düzeltme. . . . . . . . . . . . . . .<span>$65</span>
+                                        </li>
+                                        <li>Saç ve Sakal Tıraşı. . . . . . . . . . . . . . . . . . . . .
+                                            .<span>$63</span></li>
+                                        <li>Ense ve Favorİ Düzeltme (Rötuş). . . . . . . . . . . .<span>$100</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-img">
+                <img class="pricing-img1" src="assets/img/gallery/pricing1.png" alt="">
+                <img class="pricing-img2" src="assets/img/gallery/pricing2.png" alt="">
+            </div>
+        </div>
+
+        <div class="gallery-area section-padding30">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7 col-md-9 col-sm-10">
+                        <div class="section-tittle text-center mb-100">
+                            <span>FOTOĞRAF GALERİMİZ</span>
+                            <h2>BERBER DÜKKANIMIZDAN BAZI GÖRÜNTÜLER</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="box snake mb-30">
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery1.png);">
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-sm-6">
+                        <div class="box snake mb-30">
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery2.png);">
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-sm-6">
+                        <div class="box snake mb-30">
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery3.png);">
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="box snake mb-30">
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery4.png);">
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cut-details section-bg section-padding2" data-background="assets/img/gallery/section_bg02.png">
+            <div class="container">
+                <div class="cut-active dot-style">
+                    <div class="single-cut">
+                        <div class="cut-icon mb-20"><i class="fas fa-quote-left"
+                                style="color: #d4a017; font-size: 40px;"></i></div>
+                        <div class="cut-descriptions">
+                            <p>"Babamın tıraş olduğu koltukta şimdi ben oturuyorum. Yıllardır değişmeyen kalite, güler
+                                yüz ve gerçek ustalık... Burada sadece saç tıraşı olmuyoruz, bir geleneği yaşıyoruz.
+                                Emeğinize sağlık."</p><span>AHMET YILMAZ</span>
+                        </div>
+                    </div>
+                    <div class="single-cut">
+                        <div class="cut-icon mb-20"><i class="fas fa-quote-left"
+                                style="color: #d4a017; font-size: 40px;"></i></div>
+                        <div class="cut-descriptions">
+                            <p>"Klasik berber kültürünü modern saç stilleriyle harika harmanlıyorlar. Ne istediğimi uzun
+                                uzun anlatmama gerek kalmadan, yüz şeklime en uygun modeli tam istediğim gibi yaptılar.
+                                Kesinlikle tavsiye ederim."</p><span>MERT DEMİR</span>
+                        </div>
+                    </div>
+                    <div class="single-cut">
+                        <div class="cut-icon mb-20"><i class="fas fa-quote-left"
+                                style="color: #d4a017; font-size: 40px;"></i></div>
+                        <div class="cut-descriptions">
+                            <p>"İçeri girdiğiniz andan itibaren kendinizi özel hissediyorsunuz. Sıcak havlu servisi ve
+                                yıkama sırasındaki masaj günün tüm stresini alıyor. Sadece tıraş değil, tam bir bakım
+                                deneyimi."</p><span>CANER ÖZTÜRK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="home-blog-area section-padding30">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8 col-md-11">
+                        <div class="section-tittle text-center mb-50">
+                            <span>Güncel Gelişmeler</span>
+                            <h2>Duyurular & Fırsatlar</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="home-blog-single mb-30">
+                            <div class="blog-img-cap">
+                                <div class="blog-cap">
+                                    <p>26 Kasım 2025</p>
+                                    <h3><a href="#" data-toggle="modal" data-target="#duyuruModal1">Kış Sezonu İndirim
+                                            Kampanyası Başladı!</a></h3>
+                                    <a href="#" class="more-btn" data-toggle="modal"
+                                        data-target="#duyuruModal1">Detayları Oku »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="home-blog-single mb-30">
+                            <div class="blog-img-cap">
+                                <div class="blog-cap">
+                                    <p>20 Kasım 2025</p>
+                                    <h3><a href="#" data-toggle="modal" data-target="#duyuruModal2">Öğrencilere Özel %20
+                                            İndirim Fırsatı</a></h3>
+                                    <a href="#" class="more-btn" data-toggle="modal"
+                                        data-target="#duyuruModal2">Detayları Oku »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-12">
+                        <div class="section-tittle text-center mt-20">
+                            <a href="duyurular.html" class="btn header-btn">Tüm Duyuruları Gör</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-area section-bg" data-background="assets/img/gallery/footer_bg.png">
+            <div class="container">
+                <div class="footer-top footer-padding">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-logo"><a href="index.html"><img
+                                            src="assets/img/logo/logo2_footer.png" alt=""></a></div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p class="info1">En yeni güncellemelerden ve haberlerden anında haberdar olun.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="footer-number">
+                                    <h4><span>+90 </span>555 123 45 67</h4>
+                                    <p>iletisim@berberdukkani.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Hızlı Erişim</h4>
+                                    <ul>
+                                        <li><a href="index.html">Ana Sayfa</a></li>
+                                        <li><a href="about.html"> Hakkımızda</a></li>
+                                        <li><a href="services.html">Hizmetler</a></li>
+                                        <li><a href="portfolio.html">Galerimiz</a></li>
+                                        <li><a href="contact.html">İletişim</a></li>
+                                        <li><a href="admin.html" target="_blank">Yönetici Girişi</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Kurumsal</h4>
+                                    <ul>
+                                        <li><a href="#">Çerez Politikası</a></li>
+                                        <li><a href="#">Hakkımızda</a></li>
+                                        <li><a href="#">Gizlilik İlkeleri</a></li>
+                                        <li><a href="#">Kullanım Şartları</a></li>
+                                        <li><a href="#">Lisanslar</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Bülten</h4>
+                                    <div class="footer-pera">
+                                        <p class="info1">Günlük güncellemeleri almak için şimdi abone olun</p>
+                                    </div>
+                                </div>
+                                <div class="footer-form">
+                                    <div id="mc_embed_signup">
+                                        <form target="_blank"
+                                            action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                            method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                            <input type="email" name="EMAIL" id="newsletter-form-email"
+                                                placeholder="E-posta Adresi" class="placeholder hide-on-focus"
+                                                onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'E-posta Adresiniz'">
+                                            <div class="form-icon"><button type="submit" name="submit"
+                                                    id="newsletter-submit"
+                                                    class="email_icon newsletter-submit button-contactForm">Gönder</button>
+                                            </div>
+                                            <div class="mt-10 info"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-xl-9 col-lg-8">
+                            <div class="footer-copy-right">
+                                <p>Telif Hakkı &copy;
+                                    <script>document.write(new Date().getFullYear());</script> Tüm hakları saklıdır
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="footer-social f-right"><a href="#"><i class="fab fa-twitter"></i></a><a
+                                    href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a><a
+                                    href="#"><i class="fas fa-globe"></i></a><a href="#"><i
+                                        class="fab fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="back-top"><a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a></div>
+
+    <div class="modal fade" id="duyuruModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kış Sezonu İndirim Kampanyası</h5><button type="button" class="close"
+                        data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body"><img src="assets/img/gallery/gallery1.png" class="img-fluid mb-3"
+                        alt="Kampanya Görseli">
+                    <p>Tüm kış boyunca saç ve sakal bakımında %15 indirim sizleri bekliyor.</p>
+                    <hr>
+                    <h6>Ekli Dosyalar:</h6>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#" style="color: #d4a017;"><i class="fas fa-file-pdf"></i>
+                                Kampanya_Kosullari.pdf</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="duyuruModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Öğrenci İndirimi</h5><button type="button" class="close"
+                        data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>Öğrenci kimliğini gösteren tüm misafirlerimize hafta içi %20 indirim uyguluyoruz.</p>
+                    <hr>
+                    <h6>Ekli Dosyalar:</h6>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#" style="color: #007bff;"><i class="fas fa-file-word"></i> Fiyat_Listesi.docx</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="uyeOlModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color: #1c1c1c; font-weight: bold;">Aramıza Katılın</h5><button
+                        type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <form id="kayitFormu">
+                        <div class="form-group"><label>Ad Soyad</label><input type="text" class="form-control" required
+                                placeholder="Örn: Ahmet Yılmaz"></div>
+                        <div class="form-group"><label>E-posta</label><input type="email" class="form-control" required
+                                placeholder="isim@ornek.com"></div>
+                        <div class="form-group"><label>Şifre</label><input type="password" class="form-control" required
+                                placeholder="******"></div>
+                        <div class="form-group"><label>Şifre Tekrar</label><input type="password" class="form-control"
+                                required placeholder="******"></div>
+                        <button type="submit" class="btn btn-primary btn-block"
+                            style="background-color: #d4a017; border: none;">KAYDI TAMAMLA</button>
+                    </form>
+                    <div id="kayitBasarili" style="display: none; text-align: center; padding: 20px;">
+                        <i class="fas fa-check-circle"
+                            style="font-size: 60px; color: #28a745; margin-bottom: 20px;"></i>
+                        <h4>Tebrikler!</h4>
+                        <p>Üyeliğiniz başarıyla oluşturulmuştur.</p>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                            style="margin-top: 10px;">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Slider Otomatik Oynatma
+            $('.slider-active').slick('slickSetOption', { autoplay: true, autoplaySpeed: 4000, arrows: false, dots: false, fade: true }, true);
+
+            // Üye Ol Formu Simülasyonu
+            $('#kayitFormu').on('submit', function (e) {
+                e.preventDefault();
+                var btn = $(this).find('button[type="submit"]');
+                btn.prop('disabled', true).text('KAYDEDİLİYOR...');
+                setTimeout(function () { $('#kayitFormu').slideUp(); $('#kayitBasarili').fadeIn(); $('#kayitFormu')[0].reset(); btn.prop('disabled', false).text('KAYDI TAMAMLA'); }, 1500);
+            });
+            $('#uyeOlModal').on('hidden.bs.modal', function () { $('#kayitFormu').show(); $('#kayitBasarili').hide(); });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var counted = false;
+
+            $(window).scroll(function () {
+                var oTop = $('.count-down-area').offset().top - window.innerHeight;
+
+                if (counted == false && $(window).scrollTop() > oTop) {
+                    $('.counter').each(function () {
+                        var $this = $(this),
+                            countTo = $this.text();
+
+                        $({ countNum: 0 }).animate({
+                            countNum: countTo
+                        },
+                            {
+                                duration: 2000,
+                                easing: 'swing',
+                                step: function () {
+                                    $this.text(Math.ceil(this.countNum));
+                                },
+                                complete: function () {
+                                    $this.text(this.countNum);
+                                }
+                            });
+                    });
+                    counted = true;
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
