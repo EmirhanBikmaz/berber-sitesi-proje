@@ -31,8 +31,6 @@
             padding: 10px 20px !important;
         }
 
-        /* --- RANDEVU FORMU TASARIMI (CONTACT SAYFASI GİBİ BÜYÜK) --- */
-
         /* Etiketler */
         .form-group label {
             display: block !important;
@@ -103,6 +101,15 @@
         #selectedTime {
             display: none;
         }
+
+        /* --- AÇILIR LİSTE SCROLL AYARI --- */
+        .nice-select .list {
+            max-height: 250px !important; 
+            overflow-y: auto !important;  
+            width: 150% !important;       
+        }
+
+
     </style>
 </head>
 
@@ -202,18 +209,24 @@
                         <form id="randevuFormu">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="form-group">
+                                   <div class="form-group">
                                         <label>Hizmet Seçiniz</label>
                                         <select class="form-control" required>
                                             <option value="">Lütfen Bir İşlem Seçin...</option>
-                                            <option value="sac">Saç Kesimi (250 TL)</option>
-                                            <option value="sakal">Sakal Tıraşı (150 TL)</option>
-                                            <option value="sakal_duzeltme">Sakal Düzeltme / Kısaltma (100 TL)</option>
-                                            <option value="sac_sakal_duzeltme">Saç Kesimi ve Sakal Düzeltme (300 TL)
-                                            </option>
-                                            <option value="sac_sakal_tiras">Saç ve Sakal Tıraşı (350 TL)</option>
-                                            <option value="ense_favori">Ense ve Favori Düzeltme (80 TL)</option>
-                                            <option value="fon">Fön / Şekillendirme (100 TL)</option>
+                                            <option value="sac">Saç Kesimi (400 TL)</option>
+                                            <option value="sakal">Sakal Tıraşı (250 TL)</option>
+                                            <option value="sakal_duzeltme">Sakal Düzeltme / Kısaltma (200 TL)</option>
+                                            <option value="sac_sakal_duzeltme">Saç Kesimi ve Sakal Düzeltme (600 TL)</option>
+                                            <option value="sac_sakal_tiras">Saç ve Sakal Tıraşı - Full (750 TL)</option>
+                                            <option value="ense_favori">Ense ve Favori Düzeltme (150 TL)</option>
+                                            <option value="fon">Fön / Şekillendirme (200 TL)</option>
+                                            <option value="cilt">Cilt Bakımı ve Maske (500 TL)</option>
+                                            <option value="fon_boya">Fön ve Boya (750 TL)</option>
+                                            <option value="fon_tonlama">Fön ve Tonlama (600 TL)</option>
+                                            <option value="perma">Perma (Kalıcı dalga işlemi) (1200 TL)</option>
+                                            <option value="sac_fon">Saç Kesimi ve Fön (600 TL)</option>
+                                            <option value="sac_fon_boya">Saç Kesimi, Fön ve Boya (1500 TL)</option>
+                                            <option value="sac_fon_tonlama">Saç Kesimi, Fön ve Tonlama (1200 TL)</option>
                                         </select>
                                     </div>
                                 </div>
