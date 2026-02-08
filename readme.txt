@@ -2,8 +2,6 @@
 
 > Kocaeli Üniversitesi Bilişim Sistemleri Mühendisliği Web Tasarımı Dersi Projesi
 
-
-
 ## 🌐 Canlı Demo
 Projenin yayındaki haline buradan ulaşabilirsiniz:  
 [👉 **Canlı Siteyi Görüntüle**](https://emirhanbikmaz.github.io/berber-sitesi-proje/index.html)
@@ -56,13 +54,3 @@ Projede arka yüz (Back-end) teknolojileri kullanılmamış olup, **Admin Paneli
  ┣ 📜 admin.html        # Yönetici Paneli (Simülasyon)
  ┣ 📜 contact.html      # İletişim
  ┗ 📜 README.md         # Proje Dokümantasyonu
-
-🚀 Kurulum ve Çalıştırma
-Bu projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin:
-
-1. Projeyi Klonlayın: git clone https://github.com/EmirhanBikmaz/berber-sitesi-proje
-2. Klasöre girin.
-3. Çalıştırın: index.html dosyasına çift tıklayarak tarayıcınızda açmanız yeterlidir. Herhangi bir sunucu kurulumu gerektirmez.
-
-👤 Hazırlayan
-[Emirhan Bıkmaz] Bilişim Sistemleri Mühendisliği Öğrencisi Kocaeli Üniversitesi
