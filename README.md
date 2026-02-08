@@ -1,6 +1,7 @@
 # ✂️ Modern Berber Dükkanı Web Sitesi
 
 > Kocaeli Üniversitesi Bilişim Sistemleri Mühendisliği Web Tasarımı Dersi Projesi
+<img width="1852" height="892" alt="Screenshot_1" src="https://github.com/user-attachments/assets/4a46aab6-57d1-4cb4-94d1-d8ff623a30ef" />
 
 ## 🌐 Canlı Demo
 Projenin yayındaki haline buradan ulaşabilirsiniz:  
@@ -54,3 +55,12 @@ Projede arka yüz (Back-end) teknolojileri kullanılmamış olup, **Admin Paneli
  ┣ 📜 admin.html        # Yönetici Paneli (Simülasyon)
  ┣ 📜 contact.html      # İletişim
  ┗ 📜 README.md         # Proje Dokümantasyonu
+```
+## 🚀 Kurulum ve Çalıştırma
+Bu projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin:
+1. Projeyi Klonlayın: git clone https://github.com/EmirhanBikmaz/berber-sitesi-proje
+2. Klasöre girin.
+3. Çalıştırın: index.html dosyasına çift tıklayarak tarayıcınızda açmanız yeterlidir. Herhangi bir sunucu kurulumu gerektirmez.
+
+👤 Hazırlayan
+[Emirhan Bıkmaz] Bilişim Sistemleri Mühendisliği Öğrencisi Kocaeli Üniversitesi
