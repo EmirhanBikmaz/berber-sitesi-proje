@@ -62,5 +62,5 @@ Bu projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımlar�
 2. Klasöre girin.
 3. Çalıştırın: index.html dosyasına çift tıklayarak tarayıcınızda açmanız yeterlidir. Herhangi bir sunucu kurulumu gerektirmez.
 
-👤 Hazırlayan
-[Emirhan Bıkmaz] Bilişim Sistemleri Mühendisliği Öğrencisi Kocaeli Üniversitesi
+## 👤 Hazırlayan
+Emirhan Bıkmaz 
